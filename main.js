@@ -7,6 +7,7 @@ const button = document.querySelector('button')
 todoFrom.addEventListener('submit', fromHandler)
 
 let count = 0
+
 function fromHandler(event) {
 	event.preventDefault()
 
