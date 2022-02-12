@@ -15,6 +15,6 @@ function fromHandler(event) {
 	if (valueInput.length >= 1) {
 		li.innerText = valueInput
 		ul.append(li)
-		inputTodo.innerText = ''
 	}
+	inputTodo.value = ''
 }
