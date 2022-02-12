@@ -1,14 +1,19 @@
-const input = document.querySelector('#todo-input')
-const list = document.querySelector('#todo-list')
+const inputTodo = document.querySelector('#todo-input')
+const todoFrom = document.querySelector('#todo-form')
+const listTodo = document.querySelector('#todo-list')
 const button = document.querySelector('button')
 
-const ul = document.querySelector('ul')
-const li = document.createElement('li')
+todoFrom.addEventListener('submit', fromHandler)
 
-li.append((li.innerText = input.value))
-z
-if (input.value.length <= 1) {
-	input.oninput = button.onclick = function (event) {
+function fromHandler(event) {
+	event.preventDefault()
+
+	const valueInput = inputTodo.value
+	const li = document.createElement('li')
+	const ul = document.querySelector('ul')
+
+	if (valueInput.length >= 1) {
+		li.innerText = valueInput
 		ul.append(li)
 	}
 }
