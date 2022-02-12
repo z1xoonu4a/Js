@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Профиль</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<header>
+			<image src="./img/avatar.jpg" id="avatar" />
+			<h1>Дмитрий Суровцев</h1>
+			<h2 id="info">Врот Ебал Ночь Проёбана</h2>
+			<!-- <h2 id="info">Начинающий ВебПрограммист - Начинающий Повар</h2> -->
+		</header>
+
+		<!-- ToDo список задач -->
+		<div class="simple-todo">
+			<div class="tasks-wrapper">
+				<h2>Список задач</h2>
+				<ul id="todo-list">
+					<li>Посмотреть вебинар</li>
+					<li>Написать конспект</li>
+					<li>Повторить код с урока</li>
+				</ul>
+			</div>
+			<form id="todo-form">
+				<input
+					id="todo-input"
+					type="text"
+					placeholder="Введите название задачи"
+				/>
+				<button type="submit">Добавить задачу</button>
+			</form>
+		</div>
+
+		<!-- Таймер setInterval -->
+		<div class="dom-example none">
+			<div class="counter" id="counter">0</div>
+			<button role="button" id="start">Старт</button>
+			<button role="button" id="pause">Пауза</button>
+			<button role="button" id="reset">Сброс</button>
+		</div>
+
+		<!-- Fetch example - курсы валют -->
+		<div class="fetch-example none">
+			<h2>Курсы валют</h2>
+			<div class="currency-box">
+				<div class="currency-row" id="dollar">
+					<div class="currency-info">&#36;</div>
+					<span id="usd">76</span> рублей за доллар
+				</div>
+				<div class="currency-row" id="euro">
+					<div class="currency-info">&#8364;</div>
+					<span id="eur">76</span> рублей за евро
+				</div>
+			</div>
+		</div>
+
+		<script src="./main.js"></script>
+	</body>
+</html>
