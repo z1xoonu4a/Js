@@ -15,6 +15,7 @@ body {
 
 /* Шапка */
 .simple-todo {
+	color: white;
 	background: #0000003f;
 	padding: 5px 20px 20px;
 	border-radius: 22px;
