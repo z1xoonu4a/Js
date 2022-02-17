@@ -1,26 +1,12 @@
-const counter = document.querySelector('#counter')
-const buttonStart = document.querySelector('#start')
-const buttonPause = document.querySelector('#pause')
-const buttonReset = document.querySelector('#reset')
+const idUsd = document.querySelector('#usd')
+const idEuro = document.querySelector('#eur')
 
-let intervalId = 0
-let count = 0
+async function getCourse() {
+	const response = await fetch('https://www.cbr-xml-daily.ru/daily_json.js')
+	const dataJson = await response.json()
 
-buttonStart.addEventListener('click', startTimer)
-buttonPause.addEventListener('click', pauseTimer)
-buttonReset.addEventListener('click', resetTimer)
-
-function startTimer() {
-	intervalId = setInterval(() => {
-		counter.innerText = count++
-	}, 700)
+	idUsd.innerText = dataJson['Valute']['EUR']['Value']
+	idEuro.innerText = dataJson['Valute']['USD']['Value']
 }
 
-function pauseTimer() {
-	clearInterval(intervalId)
-}
-
-function resetTimer() {
-	counter.innerText = count = 0
-	clearInterval(intervalId)
-}
+getCourse()

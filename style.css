@@ -1,5 +1,4 @@
 body {
-	color: white;
 	background: rgb(58, 57, 57);
 	font-family: sans-serif;
 	line-height: 1.5;
@@ -60,18 +59,6 @@ h1 {
 	padding: 15px;
 	height: 30px;
 	font-size: 22px;
-}
-
-/* Секундомер */
-
-.counter {
-	text-align: center;
-	font-size: 42px;
-	line-height: 80px;
-	border: 1px solid #000;
-	height: 80px;
-	width: 120px;
-	margin-bottom: 20px;
 }
 
 /* Конвертер валют */
