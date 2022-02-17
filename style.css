@@ -62,20 +62,6 @@ h1 {
 	font-size: 22px;
 }
 
-/* Инпут с дублированием текста */
-
-.input-text {
-	font-size: 18px;
-	padding: 10px 15px;
-	margin-bottom: 5px;
-}
-
-/* Список дел */
-
-.simple-todo {
-	margin-top: 40px;
-}
-
 /* Секундомер */
 
 .counter {
