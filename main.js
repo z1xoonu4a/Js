@@ -1,11 +1,5 @@
-<<<<<<< HEAD
-// Course
-const idUsd = document.querySelector('#usd')
-const idEuro = document.querySelector('#eur')
-=======
 const usd = document.querySelector('#usd')
 const eur = document.querySelector('#eur')
->>>>>>> 2c26a97076c512d21e7cb2d0caa6cfa105cfed09
 
 async function getCourse() {
 	const response = await fetch('https://www.cbr-xml-daily.ru/daily_json.js')
