@@ -1,13 +1,18 @@
+<<<<<<< HEAD
 // Course
 const idUsd = document.querySelector('#usd')
 const idEuro = document.querySelector('#eur')
+=======
+const usd = document.querySelector('#usd')
+const eur = document.querySelector('#eur')
+>>>>>>> 2c26a97076c512d21e7cb2d0caa6cfa105cfed09
 
 async function getCourse() {
 	const response = await fetch('https://www.cbr-xml-daily.ru/daily_json.js')
 	const dataJson = await response.json()
 
-	idUsd.innerHTML = `${dataJson.Valute.EUR.Value.toFixed(0)} рублей за доллар.`
-	idEuro.innerHTML = `${dataJson.Valute.USD.Value.toFixed(0)} рублей за евро.`
+	usd.innerHTML = `${dataJson.Valute.USD.Value.toFixed(0)} рублей за доллар.`
+	eur.innerHTML = `${dataJson.Valute.EUR.Value.toFixed(0)} рублей за евро.`
 }
 
 getCourse()
